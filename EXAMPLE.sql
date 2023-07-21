@@ -45,3 +45,13 @@ SELECT SUM(Salary) AS MinSalary FROM Customer;
 
 SELECT AVG(Salary) AS MinSalary FROM Customer;  
 
+---------UC8-CREATING ORDER TABLE-----------------------------------
+CREATE TABLE OrderTable (
+  OrderId INT IDENTITY(1,1) PRIMARY KEY,
+  ProductName VARCHAR(50),
+  Quantity INT,
+  Rating INT,
+  CustomerId INT FOREIGN KEY REFERENCES Customer(Id)
+);
+
+
