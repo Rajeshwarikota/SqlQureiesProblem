@@ -35,3 +35,13 @@ UPDATE Customer SET Country='India', Salary=75000.00, Pincode='520165' WHERE Nam
 SELECT Country, COUNT(*) AS NumCustomers 
 FROM Customer 
 GROUP BY Country;
+
+---------UC7-SHOWING CUSTOMERS MAX,MIN,Total,AVERAGE SALARIES-------
+SELECT MAX(Salary) AS MaxSalary FROM Customer; 
+
+SELECT MIN(Salary) AS MinSalary FROM Customer; 
+
+SELECT SUM(Salary) AS MinSalary FROM Customer;
+
+SELECT AVG(Salary) AS MinSalary FROM Customer;  
+
