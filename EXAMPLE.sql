@@ -54,4 +54,11 @@ CREATE TABLE OrderTable (
   CustomerId INT FOREIGN KEY REFERENCES Customer(Id)
 );
 
+--------UC9-FETCHING DATA FROM BOTH TABLES-------------------------
+INSERT INTO OrderTable (ProductName,Quantity,Rating,CustomerId) VALUES
+('Book', 10, 5,3),
+('NoteBook', 9, 4, 2),
+('Paper', 12, 3, 1);
+
+SELECT * FROM OrderTable;
 
