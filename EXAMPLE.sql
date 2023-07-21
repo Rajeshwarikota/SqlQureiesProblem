@@ -15,6 +15,7 @@ insert into Customer values ('Chandu',9988775522,'Bangalore')
 insert into Customer values ('ammu',9955884422,'mumbai')
 
 select * from Customer
+
 ---------UC4-ADDING NEW COLOUMNS AND UPDATING VALUES--------------
 ALTER TABLE Customer ADD Country VARCHAR(50);
 ALTER TABLE Customer ADD Salary DECIMAL(10,2);
@@ -26,3 +27,6 @@ UPDATE Customer SET Country='India', Salary=44000.00, Pincode='520140' WHERE Nam
 UPDATE Customer SET Country='UAE', Salary=46000.00, Pincode='529140' WHERE Name='ammu';
 
 SELECT * FROM Customer;
+
+---------UC5-UPDATING CUSTOMER DETAILS USING NAMES------------------
+UPDATE Customer SET Country='India', Salary=75000.00, Pincode='520165' WHERE Name='Chandu';
